@@ -1,5 +1,5 @@
 body {
-    /* width: 100vw; */
+    width: 100vw; 
     min-height: 100vh;
 
     margin: 0;
@@ -12,25 +12,58 @@ body {
 }
 
 .header {
-    background-color: antiquewhite;
+    background-color: #1F2937;
     flex: 1;
 
     display: flex; 
     flex-direction: column;
+    align-items: center;
 }
 
 .header-top {
+    width: 80vw;
     display: flex;
     justify-content: space-between;
 }
 
 .header-content {
+    width: 80vw;
+
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .lhs {
     display: flex;
     flex-direction: column;
+}
+
+.lhs .text {
+    align-self: flex-start;
+    max-width: 40vw;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.text1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.text2 {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .body1 {
@@ -39,6 +72,24 @@ body {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.body1 .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+button {
+    width: fit-content;
+    background-color: #3882F6;
+}
+
+.header-img {
+    border: 2px solid grey;
+    width: 300px;
+    height: 200px;
 }
 
 .images {
@@ -46,15 +97,28 @@ body {
     justify-content: space-between;
 }
 
+.info-card img {
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+}
+
 .body2 {
-    background-color: whitesmoke;
+    background-color: #E5E7EB;
 
     padding: 32px 16px;
 }
 
 .quote-box {
     margin: auto;
-    max-width: 300px;
+    max-width: 60vw;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
 }
 
 .quoted {
@@ -65,5 +129,27 @@ body {
     background-color: bisque;
     flex: 1;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 32px 16px;
 }
+
+.cta {
+    width: fit-content;
+    background-color: cadetblue;
+    display: flex;
+
+}
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .text {
+    color: #E5E7EB;
+}
+
